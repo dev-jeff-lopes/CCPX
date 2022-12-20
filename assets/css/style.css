@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana';
+}
+
+.limita-largura {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.topo {
+    width: 100%;
+    background-color: #FFD900;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+main {
+    display: flex;
+}
+
+main section:first-of-type {
+    max-width: 50%;
+    background-color: #514988;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 0.01%;
+
+}
+
+main section:first-of-type h1 {
+    margin: 0px auto 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 85px;
+    color: #F3C61F;
+}
+
+main section:first-of-type p {
+    max-width: 570px;
+    margin: 20px auto 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+main section:last-of-type {
+    max-width: 50%;
+}
+
+main section:last-of-type video {
+    width: 100%;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer div h3 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 85px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #514988;
+    margin-top: 20px;
+}
+
+main section:last-of-type>h3 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 36px;
+    color: #E33881;
+    margin: 10px 0 20px 5px;
+}
+
+footer {
+    max-width: 1200px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer section h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    color: #F3C61F;
+    margin-bottom: 5px;
+}
+
+footer .box {
+    display: flex;
+}
+
+footer .box img {
+    width: 150px;
+    height: 150px;
+}
+
+footer section button {
+    width: 430px;
+    height: 111px;
+    background: #514988;
+    border-radius: 20px;
+    border: none;
+    margin-top: 40px;
+}
+
+footer section a {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer section a:hover {
+    transition: ease 0.3s;
+    color: #F3C61F;
+}
+
+
+
+
+
+/****************************************************************************************************************/
+/*Media Queries*/
+
+@media (max-width: 70em) {
+
+    main section:first-of-type h1 {
+        font-size: 42px;
+        line-height: 65px;
+    }
+
+    main section:first-of-type p {
+        max-width: 570px;
+        margin: 20px auto 0px;
+        font-size: 17px;
+
+    }
+
+    main section:last-of-type video {
+        max-width: 100%;
+    }
+
+    .timer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .timer div h3 {
+        font-size: 42px;
+     }
+
+    main section:last-of-type>h3 {
+        font-size: 1.1em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+ /*955px*/
+ @media (max-width: 60em){
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main section:first-of-type {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    main section:first-of-type h1 {
+        font-size: 42px;
+        line-height: 65px;
+    }
+
+    main section:first-of-type p {
+        max-width: 1000px;
+        margin: 20px auto 0px;
+        font-size: 20px;
+    }
+
+    main section:last-of-type {
+        max-width: 1000px;
+        margin: 0;
+    }
+    
+ }
+
+
+ @media (max-width: 43em){
+    
+    footer section h1 {
+        max-width: 800px;
+        font-size: 20px;
+        text-align: center;
+       margin-right: 15px;
+    }
+    
+    .timer div h3 {
+        font-size: 32px;
+     }
+
+    footer .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer section button {
+        width: 230px;
+        height: 65px;
+        
+    }
+    
+    footer section a {
+       
+        font-size: 15px;
+         
+        
+    }
+
+ }
